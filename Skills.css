@@ -1,0 +1,58 @@
+body{
+background-color: #ead18f;
+}
+nav{
+
+}
+.button{
+	background-color:#b59856;
+	color:#ead18f;
+	float:right;
+	width:15%;
+	height:35px;
+	margin:2%;
+	padding:5px 30px 10px 25px;
+	font-family:courier;
+}
+.bubble-float-bottom {
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.bubble-float-bottom:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  left: calc(50% - 10px);
+  bottom: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #b59856 transparent transparent transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: bottom;
+  transition-property: bottom;
+}
+.bubble-float-bottom:hover, .bubble-float-bottom:focus, .bubble-float-bottom:active {
+  -webkit-transform: translateY(-5px) translateZ(0);
+  transform: translateY(-5px) translateZ(0);
+}
+.bubble-float-bottom:hover:before, .bubble-float-bottom:focus:before, .bubble-float-bottom:active:before {
+  bottom: -10px;
+}
+.skillList > img:hover + ul{
+	display: block;
+}
+.skillList > ul{
+	display: none;
+	font-family: courier;
+	font-color:#b59856;
+	text-align: center;
+	padding: 5px;
+}
