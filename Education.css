@@ -2,6 +2,7 @@ body{
 	background-color:#d8d4b7;
 	color:#614d32;
 }
+
 .button{
 	background-color:#614d32;
 	color:#d8d4b7;
@@ -12,6 +13,7 @@ body{
 	padding:5px 30px 10px 25px;
 	font-family:courier;
 }
+
 .bubble-float-bottom {
   display: inline-block;
   position: relative;
@@ -23,6 +25,7 @@ body{
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .bubble-float-bottom:before {
   position: absolute;
   z-index: -1;
@@ -37,10 +40,28 @@ body{
   -webkit-transition-property: bottom;
   transition-property: bottom;
 }
+
 .bubble-float-bottom:hover, .bubble-float-bottom:focus, .bubble-float-bottom:active {
   -webkit-transform: translateY(-5px) translateZ(0);
   transform: translateY(-5px) translateZ(0);
 }
+
 .bubble-float-bottom:hover:before, .bubble-float-bottom:focus:before, .bubble-float-bottom:active:before {
   bottom: -10px;
+}
+
+.info{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:2px;
+  padding:5px;
+  width:200px;
+}
+
+img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
