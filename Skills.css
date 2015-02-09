@@ -55,4 +55,12 @@ nav{
 	font-color:#b59856;
 	text-align: center;
 	padding: 5px;
+  list-style-type:none;
+}
+
+img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:250px;
 }
